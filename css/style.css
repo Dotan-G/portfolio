@@ -447,7 +447,6 @@ footer.copyright p {
         width: 100%;
         height: 100vh;
         background-color: #fff;
-        /* color: #111; */
         transition: 0.5s;
         z-index: 90;
     }
@@ -457,6 +456,7 @@ footer.copyright p {
     header .navigation ul.menu li a {
         margin: 0;
         padding: 1rem;
+        color: #111;
     }
     header .navigation .menu-button {
         display: block;
@@ -464,19 +464,19 @@ footer.copyright p {
     header .navigation .menu-button.close {
         width: 2rem;
         height: 2rem;
-        background-image: url('/imgs/menu.png');
+        background-image: url('../imgs/menu.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     header .navigation .menu-button.open {
         width: 2rem;
         height: 2rem;
-        background-image: url('/imgs/close.png');
+        background-image: url('../imgs/close.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
     header.sticky .navigation .menu-button {
-        filter: invert(1);
+        /* filter: invert(1); */
     }
 
     .services .content {
