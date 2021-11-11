@@ -217,7 +217,7 @@ header .navigation ul li a:hover {
 .my-skills-rating .bars .line {
     margin-bottom: 0.5rem;
     position: relative;
-    height: 5px;
+    height: 6.5px;
     width: 100%;
     background-color: #999;
 }
@@ -225,7 +225,7 @@ header .navigation ul li a:hover {
 .my-skills-rating .bars .line::before {
     content: '';
     position: absolute;
-    height: 5px;
+    height: 6.5px;
     width: 100%;
     background-color: #2196f3;
 }
@@ -460,23 +460,19 @@ footer.copyright p {
     }
     header .navigation .menu-button {
         display: block;
+        width: 2rem;
+        height: 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     header .navigation .menu-button.close {
-        width: 2rem;
-        height: 2rem;
         background-image: url('../imgs/menu.png');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     header .navigation .menu-button.open {
-        width: 2rem;
-        height: 2rem;
         background-image: url('../imgs/close.png');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     header.sticky .navigation .menu-button {
-        /* filter: invert(1); */
+        filter: invert(1);
     }
 
     .services .content {
@@ -515,23 +511,3 @@ footer.copyright p {
         justify-content: start;
     }
 }
-/* @media (max-width: 1000px) {
-    header,
-    header.sticky {
-        padding: 20px 50px;
-        z-index: 100;
-    }
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: block;
-        padding: 100px 50px;
-        text-align: center;
-        width: 100%;
-        height: 100vh;
-        background-color: #fff;
-        transition: 0.5s;
-        z-index: 90;
-    }
-} */
