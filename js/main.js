@@ -10,7 +10,7 @@ function onOpenMenu(elMenuButton) {
     elMenuButton.classList.toggle('close');
     console.log(elMenuButton.classList);
     let elMenu = document.querySelector('.menu');
-    elMenu.style.transform = elMenuButton.classList.contains('open')
-        ? 'translate(0)'
-        : 'translate(-100%)';
+    elMenu.classList.toggle('open-menu');
+    let elBody = document.querySelector('body');
+    elBody.classList.toggle('hide-scroll');
 }
