@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 /* INITIALIZE */
 
@@ -8,7 +8,7 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 body {
     margin: 0;
@@ -223,7 +223,7 @@ header .navigation ul li a:hover {
 }
 
 .my-skills-rating .bars .line::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 6.5px;
     width: 100%;
@@ -260,18 +260,40 @@ header .navigation ul li a:hover {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
 }
-.projects .content {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(225px, 1fr));
-    gap: 0.333rem;
-}
 .projects .content a.projects-links {
-    background-color: #fff;
     text-decoration: none;
     color: #111;
 }
+.projects .content.owl-carousel .owl-item {
+    background-color: #fff;
+    height: 100% !important;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #2196f3 !important;
+}
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+    background: #2196f3 !important;
+}
 .projects .content a.projects-links .projects-imgs {
     padding: 1rem;
+}
+.projects .content a.projects-links .projects-imgs img {
+    object-fit: cover;
+    height: 12rem;
 }
 
 .projects .projectsBx {
@@ -426,9 +448,9 @@ footer.copyright p {
         flex-basis: 100%;
     }
 
-    .projects-container .content {
+    /* .projects-container .content {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
-    }
+    } */
 }
 
 @media (max-width: 900px) {
@@ -472,10 +494,10 @@ footer.copyright p {
         background-size: cover;
     }
     header .navigation .menu-button.close {
-        background-image: url('../imgs/menu.png');
+        background-image: url("../imgs/menu.png");
     }
     header .navigation .menu-button.open {
-        background-image: url('../imgs/close.png');
+        background-image: url("../imgs/close.png");
     }
     header.sticky .navigation .menu-button {
         filter: invert(1);
@@ -506,9 +528,9 @@ footer.copyright p {
 }
 
 @media (max-width: 600px) {
-    .projects-container .content {
+    /* .projects-container .content {
         grid-template-columns: 1fr;
-    }
+    } */
 
     .contact-info-box .box {
         flex-basis: 100%;
