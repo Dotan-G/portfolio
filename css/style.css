@@ -204,15 +204,17 @@ header .navigation ul li a:hover {
     padding-bottom: 1rem;
 }
 .btn-projects {
-    /* position: absolute; */
     bottom: 0;
 }
 .my-skills-rating .info {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.35rem;
 }
 .my-skills-rating .info span {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+.my-skills-rating .bars:not(:last-child) {
+    margin-bottom: 1.2rem;
 }
 .my-skills-rating .bars .line {
     margin-bottom: 0.5rem;
