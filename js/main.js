@@ -13,7 +13,7 @@ $(document).ready(() => {
     $(".owl-carousel").owlCarousel({
         margin: 20,
         loop: true,
-        autoplay: true,
+        // autoplay: true,
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
