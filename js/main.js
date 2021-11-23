@@ -10,6 +10,7 @@ $(document).ready(() => {
             if (value === "open") return menuToggle();
         });
     });
+    $(".formBx form").submit(onSubmitForm(event));
     $(".owl-carousel").owlCarousel({
         margin: 20,
         loop: true,
@@ -39,4 +40,8 @@ function menuToggle() {
     $(".menu-button").toggleClass("close");
     $(".menu").toggleClass("open-menu");
     $("body").toggleClass("hide-scroll");
+}
+
+function onSubmitForm(ev) {
+    ev.preventDefault();
 }
