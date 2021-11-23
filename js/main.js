@@ -10,10 +10,6 @@ $(document).ready(() => {
             if (value === "open") return menuToggle();
         });
     });
-    $(".formBx form").submit((event) => {
-        console.log("event", event);
-        event.preventDefault();
-    });
 
     // typing animation script
     var typed = new Typed(".typing", {
