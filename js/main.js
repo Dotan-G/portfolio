@@ -10,7 +10,26 @@ $(document).ready(() => {
             if (value === "open") return menuToggle();
         });
     });
-    $(".formBx form").submit(onSubmitForm(event));
+    $(".formBx form").submit((event) => {
+        console.log("event", event);
+        event.preventDefault();
+    });
+
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["Full-stack", "Frontend"],
+        typeSpeed: 150,
+        backSpeed: 60,
+        loop: true,
+    });
+    var typed = new Typed(".contentBx .typing", {
+        strings: ["Full-stack", "Frontend"],
+        typeSpeed: 150,
+        backSpeed: 60,
+        loop: true,
+    });
+
+    /* owl-carousel script*/
     $(".owl-carousel").owlCarousel({
         margin: 20,
         loop: true,
@@ -40,8 +59,4 @@ function menuToggle() {
     $(".menu-button").toggleClass("close");
     $(".menu").toggleClass("open-menu");
     $("body").toggleClass("hide-scroll");
-}
-
-function onSubmitForm(ev) {
-    ev.preventDefault();
 }
